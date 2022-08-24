@@ -33,4 +33,53 @@ class Corp extends \PhpGedcom\Record
     {
         $this->_phon[] = $phon;
     }
+
+    /**
+     * @return null
+     */
+    public function getCorp()
+    {
+        return $this->_corp;
+    }
+
+    /**
+     * @param null $corp
+     */
+    public function setCorp($corp): void
+    {
+        $this->_corp = $corp;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAddr()
+    {
+        return $this->_addr;
+    }
+
+    /**
+     * @param null $addr
+     */
+    public function setAddr($addr): void
+    {
+        $this->_addr = $addr;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPhon(): array
+    {
+        return $this->_phon;
+    }
+
+    /**
+     * @param array $phon
+     */
+    public function setPhon(array $phon): void
+    {
+        $this->_phon = $phon;
+    }
+
 }
