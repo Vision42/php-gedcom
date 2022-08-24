@@ -80,4 +80,53 @@ class Sour extends \PhpGedcom\Record
     {
         return $this->_data;
     }
+
+    /**
+     * @return null
+     */
+    public function getSour()
+    {
+        return $this->_sour;
+    }
+
+    /**
+     * @param null $sour
+     */
+    public function setSour($sour): void
+    {
+        $this->_sour = $sour;
+    }
+
+    /**
+     * @return null
+     */
+    public function getVers()
+    {
+        return $this->_vers;
+    }
+
+    /**
+     * @param null $vers
+     */
+    public function setVers($vers): void
+    {
+        $this->_vers = $vers;
+    }
+
+    /**
+     * @return null
+     */
+    public function getName()
+    {
+        return $this->_name;
+    }
+
+    /**
+     * @param null $name
+     */
+    public function setName($name): void
+    {
+        $this->_name = $name;
+    }
+
 }
