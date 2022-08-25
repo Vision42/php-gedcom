@@ -37,4 +37,54 @@ class Famc extends \PhpGedcom\Record implements Noteable
     {
         $this->_note[] = $note;
     }
+
+    /**
+     * @return null
+     */
+    public function getFamc()
+    {
+        return $this->_famc;
+    }
+
+    /**
+     * @param null $famc
+     */
+    public function setFamc($famc): void
+    {
+        $this->_famc = $famc;
+    }
+
+    /**
+     * @return null
+     */
+    public function getPedi()
+    {
+        return $this->_pedi;
+    }
+
+    /**
+     * @param null $pedi
+     */
+    public function setPedi($pedi): void
+    {
+        $this->_pedi = $pedi;
+    }
+
+    /**
+     * @return array
+     */
+    public function getNote(): array
+    {
+        return $this->_note;
+    }
+
+    /**
+     * @param array $note
+     */
+    public function setNote(array $note): void
+    {
+        $this->_note = $note;
+    }
+
+
 }
