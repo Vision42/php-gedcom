@@ -39,4 +39,37 @@ class Fams extends \PhpGedcom\Record implements Noteable
     {
         $this->_note[] = $note;
     }
+
+    /**
+     * @return null
+     */
+    public function getFams()
+    {
+        return $this->_fams;
+    }
+
+    /**
+     * @param null $fams
+     */
+    public function setFams($fams): void
+    {
+        $this->_fams = $fams;
+    }
+
+    /**
+     * @return array
+     */
+    public function getNote(): array
+    {
+        return $this->_note;
+    }
+
+    /**
+     * @param array $note
+     */
+    public function setNote(array $note): void
+    {
+        $this->_note = $note;
+    }
+
 }
