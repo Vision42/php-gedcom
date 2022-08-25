@@ -15,7 +15,9 @@
 
 namespace PhpGedcom;
 
+use PhpGedcom\Writer\Fam;
 use PhpGedcom\Writer\Head;
+use PhpGedcom\Writer\Indi;
 
 class Writer
 {
@@ -29,6 +31,9 @@ class Writer
     public function writeToString(): string
     {
         $text = Head::writeHead($this->gedcom->getHead());
+        $text .= Indi::writeIndi($this->gedcom->getIndi());
+        $text .= Fam::writeFAM($this->gedcom->getFam());
+        $text .= "0 TRLR";
 
         return $text;
     }
