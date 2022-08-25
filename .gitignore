@@ -1,3 +1,5 @@
 vendor/*
 .idea/*
 tmp/*
+/.ddev/
+/tests/stresstestfiles/FBFB_Abgabe-8.ged
