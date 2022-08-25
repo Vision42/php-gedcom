@@ -60,4 +60,53 @@ class NoteRef extends \PhpGedcom\Record implements Sourceable
     {
         $this->_sour[] = $sour;
     }
+
+    /**
+     * @return bool
+     */
+    public function isIsRef(): bool
+    {
+        return $this->_isRef;
+    }
+
+    /**
+     * @param bool $isRef
+     */
+    public function setIsRef(bool $isRef): void
+    {
+        $this->_isRef = $isRef;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNote(): string
+    {
+        return $this->_note;
+    }
+
+    /**
+     * @param string $note
+     */
+    public function setNote(string $note): void
+    {
+        $this->_note = $note;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSour(): array
+    {
+        return $this->_sour;
+    }
+
+    /**
+     * @param array $sour
+     */
+    public function setSour(array $sour): void
+    {
+        $this->_sour = $sour;
+    }
+
 }
