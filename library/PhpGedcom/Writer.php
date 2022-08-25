@@ -37,4 +37,12 @@ class Writer
 
         return $text;
     }
+
+    public function writeToFile($filePath){
+        $text = $this->writeToString();
+
+        $outputFile = fopen($filePath, "w");
+        fwrite($outputFile, $text);
+        fclose($outputFile);
+    }
 }
