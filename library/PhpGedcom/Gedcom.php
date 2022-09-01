@@ -15,6 +15,8 @@
 
 namespace PhpGedcom;
 
+use PhpGedcom\Record\Indi;
+
 /**
  * Class Gedcom
  * @package PhpGedcom
@@ -54,7 +56,7 @@ class Gedcom
      *
      * @var array
      */
-    protected $fam  = array();
+    protected $fam = array();
 
     /**
      * Stores all the notes contained within the GEDCOM file that are not inline.
@@ -212,6 +214,17 @@ class Gedcom
     public function getIndi()
     {
         return $this->indi;
+    }
+
+    /**
+     * Update an individual at specific position
+     * @param $pos
+     * @param Indi $indi
+     * @return void
+     */
+    public function updateIndi($pos, Indi $indi)
+    {
+        $this->indi[$pos] = $indi;
     }
 
     /**

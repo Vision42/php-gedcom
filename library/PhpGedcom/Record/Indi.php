@@ -601,4 +601,116 @@ class Indi extends Record implements Noteable, Objectable, Sourceable
     {
         return $this->slgc;
     }
+
+    /**
+     * @param array $attr
+     */
+    public function setAttr(array $attr): void
+    {
+        $this->attr = $attr;
+    }
+
+    /**
+     * @param array $even
+     */
+    public function setEven(array $even): void
+    {
+        $this->even = $even;
+    }
+
+    /**
+     * @param array $note
+     */
+    public function setNote(array $note): void
+    {
+        $this->note = $note;
+    }
+
+    /**
+     * @param array $obje
+     */
+    public function setObje(array $obje): void
+    {
+        $this->obje = $obje;
+    }
+
+    /**
+     * @param array $sour
+     */
+    public function setSour(array $sour): void
+    {
+        $this->sour = $sour;
+    }
+
+    /**
+     * @param array $name
+     */
+    public function setName(array $name): void
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @param array $alia
+     */
+    public function setAlia(array $alia): void
+    {
+        $this->alia = $alia;
+    }
+
+    /**
+     * @param array $fams
+     */
+    public function setFams(array $fams): void
+    {
+        $this->fams = $fams;
+    }
+
+    /**
+     * @param array $famc
+     */
+    public function setFamc(array $famc): void
+    {
+        $this->famc = $famc;
+    }
+
+    /**
+     * @param array $asso
+     */
+    public function setAsso(array $asso): void
+    {
+        $this->asso = $asso;
+    }
+
+    /**
+     * @param array $subm
+     */
+    public function setSubm(array $subm): void
+    {
+        $this->subm = $subm;
+    }
+
+    /**
+     * @param array $anci
+     */
+    public function setAnci(array $anci): void
+    {
+        $this->anci = $anci;
+    }
+
+    /**
+     * @param array $desi
+     */
+    public function setDesi(array $desi): void
+    {
+        $this->desi = $desi;
+    }
+
+    /**
+     * @param array $refn
+     */
+    public function setRefn(array $refn): void
+    {
+        $this->refn = $refn;
+    }
 }
