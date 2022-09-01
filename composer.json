@@ -1,5 +1,5 @@
 {
-    "name": "mrkrstphr/php-gedcom",
+    "name": "vision42/php-gedcom",
     "description": "A GEDCOM file parser (read + write) for PHP 7.4+",
     "type": "library", 
     "keywords": ["gedcom","parser"],
