@@ -37,6 +37,7 @@ class Indi
                 $text .= $name->getGivn() ? "2 GIVN " . $name->getGivn() . "\n" : "";
                 $text .= $name->getNpfx() ? "2 NPFX " . $name->getNpfx() . "\n" : "";
                 $text .= $name->getNsfx() ? "2 NSFX " . $name->getNsfx() . "\n" : "";
+                $text .= $name->getSpfx() ? "2 SPFX " . $name->getSpfx() . "\n" : "";
             }
 
             $text .= "1 SEX " . $value->getSex() . "\n";
