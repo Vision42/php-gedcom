@@ -30,7 +30,7 @@ class Fam
 
             foreach ($fam->getEven() as $event){
                 $text .= "1 " . $event->getType() . "\n";
-                $text .= "2 DATE " . $event->getDate() . "\n";
+                $text .= $event->getDate() ? "2 DATE " . $event->getDate() . "\n" : "";
                 $text .= $event->getPlac() ? "2 PLAC " . $event->getPlac()->getPlac() . "\n" : "";
             }
 
