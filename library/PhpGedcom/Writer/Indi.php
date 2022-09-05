@@ -31,9 +31,9 @@ class Indi
 
             /** @var $name Name */
             foreach ($value->getName() as $name) {
-                $text .= "1 NAME " . $name->getName() . "\n";
-                $text .= "2 SURN " . $name->getSurn() . "\n";
-                $text .= "2 GIVN " . $name->getGivn() . "\n";
+                $text .= $name->getName() ? "1 NAME " . $name->getName() . "\n" : "";
+                $text .= $name->getSurn() ? "2 SURN " . $name->getSurn() . "\n" : "";
+                $text .= $name->getGivn() ? "2 GIVN " . $name->getGivn() . "\n" : "";
                 $text .= $name->getNpfx() ? "2 NPFX " . $name->getNpfx() . "\n" : "";
                 $text .= $name->getNsfx() ? "2 NSFX " . $name->getNsfx() . "\n" : "";
             }
