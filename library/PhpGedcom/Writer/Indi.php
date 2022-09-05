@@ -33,6 +33,7 @@ class Indi
             foreach ($value->getName() as $name) {
                 $text .= $name->getName() ? "1 NAME " . $name->getName() . "\n" : "";
                 $text .= $name->getSurn() ? "2 SURN " . $name->getSurn() . "\n" : "";
+                $text .= $name->getNick() ? "2 NICK " . $name->getNick() . "\n" : "";
                 $text .= $name->getGivn() ? "2 GIVN " . $name->getGivn() . "\n" : "";
                 $text .= $name->getNpfx() ? "2 NPFX " . $name->getNpfx() . "\n" : "";
                 $text .= $name->getNsfx() ? "2 NSFX " . $name->getNsfx() . "\n" : "";
