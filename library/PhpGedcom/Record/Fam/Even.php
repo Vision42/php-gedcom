@@ -85,4 +85,212 @@ class Even extends \PhpGedcom\Record implements Objectable, Sourceable, Noteable
     {
         $this->_note[] = $note;
     }
+
+    /**
+     * @return null
+     */
+    public function getType()
+    {
+        return $this->_type;
+    }
+
+    /**
+     * @param null $type
+     */
+    public function setType($type): void
+    {
+        $this->_type = $type;
+    }
+
+    /**
+     * @return null
+     */
+    public function getDate()
+    {
+        return $this->_date;
+    }
+
+    /**
+     * @param null $date
+     */
+    public function setDate($date): void
+    {
+        $this->_date = $date;
+    }
+
+    /**
+     * @return null
+     */
+    public function getPlac()
+    {
+        return $this->_plac;
+    }
+
+    /**
+     * @param null $plac
+     */
+    public function setPlac($plac): void
+    {
+        $this->_plac = $plac;
+    }
+
+    /**
+     * @return null
+     */
+    public function getCaus()
+    {
+        return $this->_caus;
+    }
+
+    /**
+     * @param null $caus
+     */
+    public function setCaus($caus): void
+    {
+        $this->_caus = $caus;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAge()
+    {
+        return $this->_age;
+    }
+
+    /**
+     * @param null $age
+     */
+    public function setAge($age): void
+    {
+        $this->_age = $age;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAddr()
+    {
+        return $this->_addr;
+    }
+
+    /**
+     * @param null $addr
+     */
+    public function setAddr($addr): void
+    {
+        $this->_addr = $addr;
+    }
+
+    /**
+     * @return array
+     */
+    public function getPhon(): array
+    {
+        return $this->_phon;
+    }
+
+    /**
+     * @param array $phon
+     */
+    public function setPhon(array $phon): void
+    {
+        $this->_phon = $phon;
+    }
+
+    /**
+     * @return null
+     */
+    public function getAgnc()
+    {
+        return $this->_agnc;
+    }
+
+    /**
+     * @param null $agnc
+     */
+    public function setAgnc($agnc): void
+    {
+        $this->_agnc = $agnc;
+    }
+
+    /**
+     * @return null
+     */
+    public function getHusb()
+    {
+        return $this->_husb;
+    }
+
+    /**
+     * @param null $husb
+     */
+    public function setHusb($husb): void
+    {
+        $this->_husb = $husb;
+    }
+
+    /**
+     * @return null
+     */
+    public function getWife()
+    {
+        return $this->_wife;
+    }
+
+    /**
+     * @param null $wife
+     */
+    public function setWife($wife): void
+    {
+        $this->_wife = $wife;
+    }
+
+    /**
+     * @return array
+     */
+    public function getObje(): array
+    {
+        return $this->_obje;
+    }
+
+    /**
+     * @param array $obje
+     */
+    public function setObje(array $obje): void
+    {
+        $this->_obje = $obje;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSour(): array
+    {
+        return $this->_sour;
+    }
+
+    /**
+     * @param array $sour
+     */
+    public function setSour(array $sour): void
+    {
+        $this->_sour = $sour;
+    }
+
+    /**
+     * @return array
+     */
+    public function getNote(): array
+    {
+        return $this->_note;
+    }
+
+    /**
+     * @param array $note
+     */
+    public function setNote(array $note): void
+    {
+        $this->_note = $note;
+    }
 }
