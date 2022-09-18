@@ -251,4 +251,117 @@ class Fam extends \PhpGedcom\Record implements Noteable, Sourceable, Objectable
     {
         return $this->_obje;
     }
+
+    /**
+     * @param null $id
+     */
+    public function setId($id): void
+    {
+        $this->_id = $id;
+    }
+
+    /**
+     * @param null $chan
+     */
+    public function setChan($chan): void
+    {
+        $this->_chan = $chan;
+    }
+
+    /**
+     * @param null $husb
+     */
+    public function setHusb($husb): void
+    {
+        $this->_husb = $husb;
+    }
+
+    /**
+     * @param null $wife
+     */
+    public function setWife($wife): void
+    {
+        $this->_wife = $wife;
+    }
+
+    /**
+     * @param null $nchi
+     */
+    public function setNchi($nchi): void
+    {
+        $this->_nchi = $nchi;
+    }
+
+    /**
+     * @param array $chil
+     */
+    public function setChil(array $chil): void
+    {
+        $this->_chil = $chil;
+    }
+
+    /**
+     * @param array $even
+     */
+    public function setEven(array $even): void
+    {
+        $this->_even = $even;
+    }
+
+    /**
+     * @param array $slgs
+     */
+    public function setSlgs(array $slgs): void
+    {
+        $this->_slgs = $slgs;
+    }
+
+    /**
+     * @param array $subm
+     */
+    public function setSubm(array $subm): void
+    {
+        $this->_subm = $subm;
+    }
+
+    /**
+     * @param array $refn
+     */
+    public function setRefn(array $refn): void
+    {
+        $this->_refn = $refn;
+    }
+
+    /**
+     * @param null $rin
+     */
+    public function setRin($rin): void
+    {
+        $this->_rin = $rin;
+    }
+
+    /**
+     * @param array $note
+     */
+    public function setNote(array $note): void
+    {
+        $this->_note = $note;
+    }
+
+    /**
+     * @param array $sour
+     */
+    public function setSour(array $sour): void
+    {
+        $this->_sour = $sour;
+    }
+
+    /**
+     * @param array $obje
+     */
+    public function setObje(array $obje): void
+    {
+        $this->_obje = $obje;
+    }
+
 }
