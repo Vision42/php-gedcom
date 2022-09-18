@@ -15,6 +15,7 @@
 
 namespace PhpGedcom;
 
+use PhpGedcom\Record\Fam;
 use PhpGedcom\Record\Indi;
 
 /**
@@ -235,6 +236,16 @@ class Gedcom
     public function getFam()
     {
         return $this->fam;
+    }
+
+    /**
+     * @param $pos
+     * @param Fam $fam
+     * @return void
+     */
+    public function updateFam($pos, Fam $fam)
+    {
+        $this->fam[$pos] = $fam;
     }
 
     /**
