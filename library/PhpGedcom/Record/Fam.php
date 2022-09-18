@@ -139,4 +139,116 @@ class Fam extends \PhpGedcom\Record implements Noteable, Sourceable, Objectable
     {
         $this->_obje[] = $obje;
     }
+
+    /**
+     * @return null
+     */
+    public function getId()
+    {
+        return $this->_id;
+    }
+
+    /**
+     * @return null
+     */
+    public function getChan()
+    {
+        return $this->_chan;
+    }
+
+    /**
+     * @return null
+     */
+    public function getHusb()
+    {
+        return $this->_husb;
+    }
+
+    /**
+     * @return null
+     */
+    public function getWife()
+    {
+        return $this->_wife;
+    }
+
+    /**
+     * @return null
+     */
+    public function getNchi()
+    {
+        return $this->_nchi;
+    }
+
+    /**
+     * @return array
+     */
+    public function getChil(): array
+    {
+        return $this->_chil;
+    }
+
+    /**
+     * @return array
+     */
+    public function getEven(): array
+    {
+        return $this->_even;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSlgs(): array
+    {
+        return $this->_slgs;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSubm(): array
+    {
+        return $this->_subm;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRefn(): array
+    {
+        return $this->_refn;
+    }
+
+    /**
+     * @return null
+     */
+    public function getRin()
+    {
+        return $this->_rin;
+    }
+
+    /**
+     * @return array
+     */
+    public function getNote(): array
+    {
+        return $this->_note;
+    }
+
+    /**
+     * @return array
+     */
+    public function getSour(): array
+    {
+        return $this->_sour;
+    }
+
+    /**
+     * @return array
+     */
+    public function getObje(): array
+    {
+        return $this->_obje;
+    }
 }
