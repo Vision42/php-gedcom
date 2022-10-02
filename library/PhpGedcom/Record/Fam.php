@@ -301,6 +301,15 @@ class Fam extends \PhpGedcom\Record implements Noteable, Sourceable, Objectable
     }
 
     /**
+     * @param string $indiId
+     * @return void
+     */
+    public function addChil(string $indiId): void
+    {
+        $this->_chan[] = $indiId;
+    }
+
+    /**
      * @param array $even
      */
     public function setEven(array $even): void
