@@ -42,9 +42,8 @@ class Indi
 
             $text .= "1 SEX " . $value->getSex() . "\n";
 
-            $famc = $value->getFamc();
-            if (count($famc)) {
-                $text .= "1 FAMC @" . $famc[0]->getFamc() . "@\n";
+            foreach ($value->getFamc() as $famc) {
+                $text .= "1 FAMC @" . $famc->getFamc() . "@\n";
             }
 
             foreach ($value->getEven() as $event) {
@@ -68,7 +67,9 @@ class Indi
                 $text .= "2 TIME " . $value->getChan()->getTime() . "\n";
             }
 
-            $text .= count($value->getFams()) ? "1 FAMS @" . $value->getFams()[0]->getFams() . "@\n" : "";
+            foreach ($value->getFams() as $fams) {
+                $text .= "1 FAMS @" . $fams->getFams() . "@\n";
+            }
         }
 
         return $text;
