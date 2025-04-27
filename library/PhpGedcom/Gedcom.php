@@ -287,4 +287,27 @@ class Gedcom
     {
         return $this->obje;
     }
+
+    /// Added functions
+
+    /**
+     * Remove an individual from the GEDCOM file.
+     * Checks if the individual is referenced in any families before removing.
+     * If the individual is referenced in a family, it will not be removed.
+     * 
+     * @param Record\Indi $indi
+     * @return bool Returns true if the individual was removed, false otherwise.
+     */
+    public function removeIndi(Record\Indi $indi)
+    {
+        if ($indi->getFams() || $indi->getFamc()) {
+            return false;
+        }
+
+        if (isset($this->indi[$indi->getId()])) {
+            unset($this->indi[$indi->getId()]);
+        }
+
+        return true;
+    }
 }
